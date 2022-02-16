@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-
+    [SerializeField] float health = 20;
     [Range(0f, 5f)] float currentSpeed = 1f;
-
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -20,5 +15,19 @@ public class Attacker : MonoBehaviour
     public void SetMovementSpeed(float speed)
     {
         currentSpeed = speed;
+    }
+
+    public void DealDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 }

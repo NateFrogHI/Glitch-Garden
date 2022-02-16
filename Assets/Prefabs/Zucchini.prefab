@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6348841394182750107}
   - component: {fileID: 4953098807328957070}
+  - component: {fileID: -5198915966499415969}
+  - component: {fileID: -2859026261049822202}
+  - component: {fileID: 8018925549534240644}
   m_Layer: 0
   m_Name: Zucchini
   m_TagString: Untagged
@@ -81,3 +84,86 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5198915966499415969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8912486526787968849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a0ffcf1517730468062dae8633fd7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpeed: 5
+  speedOfSpin: 90
+  damage: 10
+--- !u!50 &-2859026261049822202
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8912486526787968849}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &8018925549534240644
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8912486526787968849}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.56, y: 0.56}
+    newSize: {x: 0.56, y: 0.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.16094172, y: 0.2852285}
+      - {x: -0.21842289, y: 0.28078294}
+      - {x: -0.24945095, y: 0.26581648}
+      - {x: -0.28194463, y: 0.22624016}
+      - {x: -0.2850033, y: 0.16814661}
+      - {x: -0.25927022, y: 0.13654625}
+      - {x: -0.21181369, y: 0.10763726}
+      - {x: -0.10844457, y: 0.059869528}
+      - {x: -0.027691126, y: 0.023293257}
+      - {x: 0.043471575, y: -0.055758953}
+      - {x: 0.108867645, y: -0.14973545}
+      - {x: 0.15840387, y: -0.2374146}
+      - {x: 0.17735185, y: -0.27252963}
+      - {x: 0.2190156, y: -0.27182662}
+      - {x: 0.24913287, y: -0.26235974}
+      - {x: 0.27875474, y: -0.23144284}
+      - {x: 0.27682614, y: -0.18555927}
+      - {x: 0.26118827, y: -0.1284157}
+      - {x: 0.2264624, y: -0.045138434}
+      - {x: 0.109229535, y: 0.10735161}
+      - {x: -0.007509837, y: 0.20650208}
+      - {x: -0.09494062, y: 0.25883391}
