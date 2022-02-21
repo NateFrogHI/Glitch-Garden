@@ -11,7 +11,6 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.right * projectileSpeed * Time.deltaTime);
-        // transform.Rotate(0, 0, speedOfSpin * Time.deltaTime);  // Figure out how to rotate
     }
 
     public float GetDamage()
@@ -19,17 +18,18 @@ public class Projectile : MonoBehaviour
         return damage;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        Attacker attacker = collision.gameObject.GetComponent<Attacker>();
-        if (attacker) {
-            ProcessHit(attacker);
+        Attacker attacker = otherCollider.gameObject.GetComponent<Attacker>();
+        Health health = otherCollider.GetComponent<Health>();
+        if (attacker && health) {
+            ProcessHit(health);
         }
     }
 
-    private void ProcessHit(Attacker attacker)
+    private void ProcessHit(Health health)
     {
-        attacker.DealDamage(damage);
+        health.DealDamage(damage);
         Destroy(gameObject);
     }
 }

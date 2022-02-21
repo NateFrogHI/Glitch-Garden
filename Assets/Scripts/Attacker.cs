@@ -16,18 +16,4 @@ public class Attacker : MonoBehaviour
     {
         currentSpeed = speed;
     }
-
-    public void DealDamage(float damage)
-    {
-        health -= damage;
-        if (health <= 0)
-        {
-            Die();
-        }
-    }
-
-    private void Die()
-    {
-        Destroy(gameObject);
-    }
 }
