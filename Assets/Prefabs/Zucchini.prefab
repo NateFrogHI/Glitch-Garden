@@ -97,7 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpeed: 5
-  speedOfSpin: 90
   damage: 10
 --- !u!50 &-2859026261049822202
 Rigidbody2D:

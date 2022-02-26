@@ -5,7 +5,6 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 1.0f;
-    [SerializeField] float speedOfSpin = 360f;
     [SerializeField] float damage = 10f;
 
     void Update()
