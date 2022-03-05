@@ -11,7 +11,9 @@ public class LevelLoader : MonoBehaviour
     private enum Scene
     {
         Splash,
-        Start
+        Start,
+        Game,
+        GameOver
     }
 
     void Start()
@@ -29,14 +31,29 @@ public class LevelLoader : MonoBehaviour
         LoadStartScene();
     }
 
+    private void LoadScene(int sceneIndex)
+    {
+        currentSceneIndex = sceneIndex;
+        SceneManager.LoadScene(sceneIndex);
+    }
+
     public void LoadStartScene()
     {
-        currentSceneIndex = (int)Scene.Start;
-        SceneManager.LoadScene((int)Scene.Start);
+        LoadScene((int)Scene.Start);
+    }
+
+    public void LoadGameScene()
+    {
+        LoadScene((int)Scene.Game);
+    }
+
+    public void LoadGameOverScene()
+    {
+        LoadScene((int)Scene.GameOver);
     }
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(++currentSceneIndex);
+        LoadScene(++currentSceneIndex);
     }
 }

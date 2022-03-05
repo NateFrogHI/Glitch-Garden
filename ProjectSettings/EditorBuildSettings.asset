@@ -10,5 +10,11 @@ EditorBuildSettings:
     guid: 2b847541c32371741842f01456cc8e69
   - enabled: 1
     path: Assets/Scenes/Start Screen.unity
+    guid: 2930876b686bdcf4987bf65bcb09b8da
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 37bea147acb2fed43ae527c8b077a779
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
     guid: c8b0917d80943304e8bd7082f1d81bf8
   m_configObjects: {}
