@@ -29,4 +29,9 @@ public class AttackerSpawner : MonoBehaviour
         int attackerIndex = Random.Range(0, attackerPrefabArray.Length);
         Spawn(attackerPrefabArray[attackerIndex]);
     }
+
+    public void StopSpawning()
+    {
+        spawn = false;
+    }
 }
