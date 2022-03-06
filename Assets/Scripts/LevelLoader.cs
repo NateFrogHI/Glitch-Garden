@@ -12,7 +12,8 @@ public class LevelLoader : MonoBehaviour
     {
         Splash,
         Start,
-        Game,
+        Level1,
+        Level2,
         GameOver
     }
 
@@ -44,7 +45,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadGameScene()
     {
-        LoadScene((int)Scene.Game);
+        LoadScene((int)Scene.Level1);
     }
 
     public void LoadGameOverScene()
