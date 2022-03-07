@@ -64,4 +64,9 @@ public class LevelLoader : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(currentSceneIndex);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
