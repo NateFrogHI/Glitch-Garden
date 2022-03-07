@@ -12,6 +12,7 @@ public class LevelLoader : MonoBehaviour
     {
         Splash,
         Start,
+        Options,
         Level1,
         Level2,
         GameOver
@@ -42,6 +43,11 @@ public class LevelLoader : MonoBehaviour
     {
         Time.timeScale = 1;
         LoadScene((int)Scene.Start);
+    }
+
+    public void LoadOptionsScene()
+    {
+        LoadScene((int)Scene.Options);
     }
 
     public void LoadGameScene()
