@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2049644275, guid: 0578acb7c0bee0f4a81c1ce717529483, type: 3}
       propertyPath: maxSpawnDelay
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1204511717334229338, guid: 0578acb7c0bee0f4a81c1ce717529483,
         type: 3}
@@ -264,7 +264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2049644275, guid: 0578acb7c0bee0f4a81c1ce717529483, type: 3}
       propertyPath: maxSpawnDelay
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1204511717334229338, guid: 0578acb7c0bee0f4a81c1ce717529483,
         type: 3}
@@ -610,11 +610,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 855428204816799234, guid: 6e396f339411f924ab33b28c4f08fad6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 855428205637919308, guid: 6e396f339411f924ab33b28c4f08fad6,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1187,7 +1182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2054483997, guid: 39902356f5b61084b8b8a36b49656dd9, type: 3}
       propertyPath: levelTime
-      value: 30
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 5802194688202698276, guid: 39902356f5b61084b8b8a36b49656dd9,
         type: 3}

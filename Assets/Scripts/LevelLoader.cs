@@ -15,7 +15,7 @@ public class LevelLoader : MonoBehaviour
         Options,
         Level1,
         Level2,
-        GameOver
+        Win
     }
 
     void Start()
@@ -55,9 +55,9 @@ public class LevelLoader : MonoBehaviour
         LoadScene((int)Scene.Level1);
     }
 
-    public void LoadGameOverScene()
+    public void LoadWinScene()
     {
-        LoadScene((int)Scene.GameOver);
+        LoadScene((int)Scene.Win);
     }
 
     public void LoadNextScene()
