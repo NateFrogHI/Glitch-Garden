@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    [SerializeField] GameObject projectile, gun;
+    [SerializeField] Projectile projectile;
+    [SerializeField] GameObject gun;
     AttackerSpawner myLaneSpawner;
     Animator animator;
     GameObject projectileParent;
@@ -56,7 +57,7 @@ public class Shooter : MonoBehaviour
 
     private bool IsAttackerInLane()
     {
-        if (myLaneSpawner.transform.childCount <= 0)
+        if (!myLaneSpawner || myLaneSpawner.transform.childCount <= 0)
         {
             return false;
         }
@@ -66,8 +67,15 @@ public class Shooter : MonoBehaviour
 
     public void Fire()
     {
-        GameObject newProjectile = Instantiate(projectile, gun.transform.position, transform.rotation)
-            as GameObject;
+        Projectile newProjectile = Instantiate(projectile, gun.transform.position, transform.rotation);
         newProjectile.transform.parent = projectileParent.transform;
     }
+
+#if UNITY_EDITOR
+    public void SetTestVariables(Projectile testProjectile, GameObject testGun)
+    {
+        projectile = testProjectile;
+        gun = testGun;
+    }
+#endif
 }
